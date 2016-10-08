@@ -1,0 +1,5 @@
+RAKLAP_MOUNTPOINT='/mnt/raklap'
+RAKLAP_MOUNTOPTS='uid=24883,gid=6,utf8=1,fmask=0113,dmask=0003'
+RAKLAP_BLOCKDEVICE='/dev/disk/by-id/usb-058f_6387_25AAF847-0:0-part1'
+RAKLAP_INCOMINGDIR="~/tmp"
+
