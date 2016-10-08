@@ -15,7 +15,7 @@ _format_device() {
 }
 
 _wipe_device() {
-	mountpoint -- "${RAKLAP_MOUNTPOINT}" && find "${RAKLAP_MOUNTPOINT}" -type f -print0 | xargs --null -- shred --verbose --random-source=/dev/urandom -n1 --
+	mountpoint -- "${RAKLAP_MOUNTPOINT}" && find "${RAKLAP_MOUNTPOINT}" -type f -print0 | xargs --null --no-run-if-empty -- shred --verbose --random-source=/dev/urandom -n1 --
 }
 
 _clean_device() {
