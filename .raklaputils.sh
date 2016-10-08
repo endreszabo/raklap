@@ -3,7 +3,7 @@
 set -o errexit
 
 _mount_device() {
-	sudo mount -v "${RAKLAP_BLOCKDEVICE}" "${RAKLAP_MOUNTPOINT}" -o "${RAKLAP_MOUNTOPTS}"
+	sudo mount -v -t vfat "${RAKLAP_BLOCKDEVICE}" "${RAKLAP_MOUNTPOINT}" -o "${RAKLAP_MOUNTOPTS}"
 }
 
 _umount_device() {
